@@ -1,6 +1,6 @@
 <h1>Cart</h1>
 <ul>
-  <% @session[:item].each do |item| %>
-    <li><%= item %></li>
+  <% session.each do |item| %>
+    <li><%= session[item] %></li>
   <% end %>
 </ul>
